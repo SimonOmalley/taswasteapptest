@@ -6,7 +6,7 @@ void main() {
       home: Scaffold(
         body: Center(
           child: Text(
-            'Hello World, this is me',
+            'Hello World',
             textDirection: TextDirection.ltr,
           ),
         ),
