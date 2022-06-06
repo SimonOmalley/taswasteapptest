@@ -1,31 +1,16 @@
 import 'package:flutter/material.dart';
+import 'screens/Dashboard.dart';
 
-void main() {
-  runApp(MaterialApp(
-    title: "Tas Waste App",
-    home: MaterialApp(
-        title: 'Tas Waste App',
-        home: Scaffold(
-          appBar: AppBar(
-            title: Text('Dashboard'.toUpperCase()),
-            backgroundColor: Colors.amber,
-          ),
-          body: const Center(
-            child: Text.rich(
-              TextSpan(
-                text: "My",
-                children: [
-                  TextSpan(
-                      text: "Flutter",
-                      style: TextStyle(
-                          fontSize: 50.0, fontWeight: FontWeight.bold)),
-                  TextSpan(
-                      text: "App",
-                      style: TextStyle(fontSize: 30.0, color: Colors.red)),
-                ],
-              ),
-            ),
-          ),
-        )),
-  ));
+void main() => runApp(const WasteApp());
+
+class WasteApp extends StatelessWidget {
+  const WasteApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      title: "Tas Waste App",
+      home: Dashboard(),
+    );
+  }
 }
