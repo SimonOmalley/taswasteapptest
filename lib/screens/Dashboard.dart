@@ -22,6 +22,7 @@ class Dashboard extends StatelessWidget {
               TextSpan(
                   text: "App",
                   style: TextStyle(fontSize: 30.0, color: Colors.red)),
+
             ],
           ),
         ),
