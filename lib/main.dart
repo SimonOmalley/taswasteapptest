@@ -11,7 +11,7 @@ class WasteApp extends StatelessWidget {
     return const MaterialApp(
       title: "Tas Waste App",
       themeMode: ThemeMode.system,
-      home: Dashboard(),
+      home: MyStatefulWidget(),
     );
   }
 }
