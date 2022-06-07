@@ -27,7 +27,6 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lime,
       appBar: AppBar(
         backgroundColor: Colors.white,
         title: const Text(
@@ -57,6 +56,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.white,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
