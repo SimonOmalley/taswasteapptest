@@ -48,8 +48,9 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           ),
         ],
       ),
-      body: Center(
-        child: _widgetOptions.elementAt(_selectedIndex),
+      body: Image(
+        image: AssetImage(
+            'images/12-127877_colorful-natural-tree-free-png-file-clipart-tree.png'),
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
