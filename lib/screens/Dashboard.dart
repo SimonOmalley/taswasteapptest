@@ -5,17 +5,16 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'HomePage',
-      style: optionStyle,
+    Image(
+      image: AssetImage(
+          'images/12-127877_colorful-natural-tree-free-png-file-clipart-tree.png'),
     ),
-    Text(
-      'Taken to Camera',
-      style: optionStyle,
+    Image(
+      image: AssetImage(
+          'images/111666427-albero-isolato-su-sfondo-trasparente-con-ombra-morbida-utilizzare-per-la-progettazione-del-paesaggio.webp'),
     ),
-    Text(
-      'User Settings',
-      style: optionStyle,
+    Image(
+      image: AssetImage('images/UI theme.png'),
     ),
   ];
 
@@ -28,14 +27,22 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.lime,
       appBar: AppBar(
-        title: const Text('Hello Brodie,\n'
-            'Good Morning'),
+        backgroundColor: Colors.white,
+        title: const Text(
+          'Hello Brodie,\n'
+          'Good Morning',
+          style: TextStyle(
+            color: Colors.black,
+          ),
+        ),
         leading: IconButton(
           onPressed: () {},
           icon: Icon(
             Icons.account_circle_outlined,
             size: 50,
+            color: Colors.green,
           ),
         ),
         actions: [
@@ -43,14 +50,11 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
             onPressed: () {},
             icon: Icon(
               Icons.notifications,
-              size: 30,
+              size: 40,
+              color: Colors.black,
             ),
           ),
         ],
-      ),
-      body: Image(
-        image: AssetImage(
-            'images/12-127877_colorful-natural-tree-free-png-file-clipart-tree.png'),
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
