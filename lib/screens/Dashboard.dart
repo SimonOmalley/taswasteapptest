@@ -27,13 +27,37 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: Row(
+        children: [
+          Container(
+            width: 150.0,
+            height: 150.0,
+            padding: EdgeInsets.all(20.0),
+            alignment: Alignment.topLeft,
+            decoration: BoxDecoration(
+                color: Colors.green, borderRadius: BorderRadius.circular(15.0)),
+          ),
+          Center(
+            child: Container(
+              width: 250.0,
+              height: 250.0,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                  color: Colors.yellow,
+                  borderRadius: BorderRadius.circular(15.0)),
+            ),
+          ),
+        ],
+      ),
       appBar: AppBar(
         backgroundColor: Colors.white,
-        title: const Text(
-          'Hello Brodie,\n'
-          'Good Morning',
-          style: TextStyle(
-            color: Colors.black,
+        title: Container(
+          child: const Text(
+            'Hello Brodie,\n'
+            'Good Morning',
+            style: TextStyle(
+              color: Colors.black,
+            ),
           ),
         ),
         leading: IconButton(
