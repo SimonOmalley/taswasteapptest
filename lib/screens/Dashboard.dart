@@ -29,14 +29,6 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
     return Scaffold(
       body: Row(
         children: [
-          Container(
-            width: 150.0,
-            height: 150.0,
-            padding: EdgeInsets.all(20.0),
-            alignment: Alignment.topLeft,
-            decoration: BoxDecoration(
-                color: Colors.green, borderRadius: BorderRadius.circular(15.0)),
-          ),
           Center(
             child: Container(
               width: 250.0,
@@ -46,6 +38,14 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                   color: Colors.yellow,
                   borderRadius: BorderRadius.circular(15.0)),
             ),
+          ),
+          Container(
+            width: 150.0,
+            height: 150.0,
+            padding: EdgeInsets.all(20.0),
+            alignment: Alignment.topLeft,
+            decoration: BoxDecoration(
+                color: Colors.green, borderRadius: BorderRadius.circular(15.0)),
           ),
         ],
       ),
