@@ -27,26 +27,43 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Row(
+      body: Column(
         children: [
-          Center(
-            child: Container(
-              width: 250.0,
-              height: 250.0,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                  color: Colors.yellow,
-                  borderRadius: BorderRadius.circular(15.0)),
-            ),
+          Row(
+            children: [
+              Container(
+                width: 150.0,
+                height: 150.0,
+                margin: EdgeInsets.fromLTRB(20, 20, 10, 0),
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                    color: Colors.green,
+                    borderRadius: BorderRadius.circular(15.0)),
+              ),
+              Container(
+                width: 150.0,
+                height: 150.0,
+                margin: EdgeInsets.fromLTRB(50, 20, 10, 0),
+                decoration: BoxDecoration(
+                    color: Colors.red,
+                    borderRadius: BorderRadius.circular(15.0)),
+              ),
+            ],
           ),
-          Container(
-            width: 150.0,
-            height: 150.0,
-            padding: EdgeInsets.all(20.0),
-            alignment: Alignment.topLeft,
-            decoration: BoxDecoration(
-                color: Colors.green, borderRadius: BorderRadius.circular(15.0)),
-          ),
+          Row(
+            children: [
+              Container(
+                width: 371.0,
+                height: 250.0,
+                padding: EdgeInsets.all(20.0),
+                margin: EdgeInsets.fromLTRB(20, 40, 20, 40),
+                alignment: Alignment.centerRight,
+                decoration: BoxDecoration(
+                    color: Colors.yellow,
+                    borderRadius: BorderRadius.circular(15.0)),
+              ),
+            ],
+          )
         ],
       ),
       appBar: AppBar(
