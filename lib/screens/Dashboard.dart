@@ -56,11 +56,24 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                 width: 371.0,
                 height: 250.0,
                 padding: EdgeInsets.all(20.0),
-                margin: EdgeInsets.fromLTRB(20, 40, 20, 40),
+                margin: EdgeInsets.fromLTRB(20, 20, 20, 20),
                 alignment: Alignment.centerRight,
                 decoration: BoxDecoration(
                     color: Colors.yellow,
                     borderRadius: BorderRadius.circular(15.0)),
+              ),
+            ],
+          ),
+          Row(
+            children: [
+              Container(
+                width: 371.0,
+                height: 175,
+                margin: EdgeInsets.fromLTRB(20, 0, 20, 20),
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(15.0),
+                ),
               ),
             ],
           )
