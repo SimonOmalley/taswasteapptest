@@ -107,6 +107,14 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               color: Colors.black,
             ),
           ),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.search,
+              size: 40,
+              color: Colors.black,
+            ),
+          ),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
