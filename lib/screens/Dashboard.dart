@@ -95,7 +95,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           icon: Icon(
             Icons.account_circle_outlined,
             size: 50,
-            color: Colors.green,
+            color: Colors.yellow,
           ),
         ),
         actions: [
