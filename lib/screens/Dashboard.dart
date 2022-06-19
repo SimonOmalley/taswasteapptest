@@ -104,7 +104,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
             icon: Icon(
               Icons.notifications,
               size: 40,
-              color: Colors.black,
+              color: Colors.red,
             ),
           ),
           IconButton(
