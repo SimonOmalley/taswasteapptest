@@ -4,19 +4,6 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   int _selectedIndex = 0;
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static const List<Widget> _widgetOptions = <Widget>[
-    Image(
-      image: AssetImage(
-          'images/12-127877_colorful-natural-tree-free-png-file-clipart-tree.png'),
-    ),
-    Image(
-      image: AssetImage(
-          'images/111666427-albero-isolato-su-sfondo-trasparente-con-ombra-morbida-utilizzare-per-la-progettazione-del-paesaggio.webp'),
-    ),
-    Image(
-      image: AssetImage('images/UI theme.png'),
-    ),
-  ];
 
   void _onItemTapped(int index) {
     setState(() {
