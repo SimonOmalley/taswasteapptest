@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Home extends StatelessWidget {
+class MyHome extends StatefulWidget {
+  const MyHome({Key? key}) : super(key: key);
+
+  @override
+  State<MyHome> createState() => Home();
+}
+
+class Home extends State<MyHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -9,47 +16,34 @@ class Home extends StatelessWidget {
           Row(
             children: [
               Container(
-                width: 150.0,
-                height: 150.0,
-                margin: EdgeInsets.fromLTRB(20, 20, 10, 0),
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                    color: Colors.green,
-                    borderRadius: BorderRadius.circular(15.0)),
-              ),
-              Container(
-                width: 150.0,
-                height: 150.0,
-                margin: EdgeInsets.fromLTRB(50, 20, 10, 0),
-                decoration: BoxDecoration(
-                    color: Colors.red,
-                    borderRadius: BorderRadius.circular(15.0)),
+                height: MediaQuery.of(context).size.height * 0.25,
+                width: MediaQuery.of(context).size.width,
+                padding: EdgeInsets.all(20.0),
+                color: Colors.lightGreen,
               ),
             ],
           ),
           Row(
             children: [
               Container(
-                width: 371.0,
-                height: 250.0,
+                height: MediaQuery.of(context).size.height * 0.295,
+                width: MediaQuery.of(context).size.width,
                 padding: EdgeInsets.all(20.0),
-                margin: EdgeInsets.fromLTRB(20, 20, 20, 20),
                 alignment: Alignment.centerRight,
                 decoration: BoxDecoration(
-                    color: Colors.yellow,
-                    borderRadius: BorderRadius.circular(15.0)),
-              ),
+                  color: Colors.yellow,
+                ),
+              )
             ],
           ),
           Row(
             children: [
               Container(
-                width: 371.0,
-                height: 175,
-                margin: EdgeInsets.fromLTRB(20, 0, 20, 20),
+                height: MediaQuery.of(context).size.height * 0.25,
+                width: MediaQuery.of(context).size.width,
+                padding: EdgeInsets.all(20.0),
                 decoration: BoxDecoration(
                   color: Colors.blue,
-                  borderRadius: BorderRadius.circular(15.0),
                 ),
               ),
             ],
@@ -72,7 +66,7 @@ class Home extends StatelessWidget {
           icon: Icon(
             Icons.account_circle_outlined,
             size: 50,
-            color: Colors.yellow,
+            color: Colors.green,
           ),
         ),
         actions: [
@@ -81,7 +75,7 @@ class Home extends StatelessWidget {
             icon: Icon(
               Icons.notifications,
               size: 40,
-              color: Colors.red,
+              color: Colors.black,
             ),
           ),
           IconButton(
@@ -95,22 +89,20 @@ class Home extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.white,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.camera_alt_rounded),
-            label: 'Scan',
+            icon: Icon(Icons.camera),
+            label: 'Camera',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.settings),
             label: 'Settings',
           ),
         ],
-        selectedItemColor: Colors.green,
       ),
     );
   }

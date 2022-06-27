@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/Dashboard.dart';
+import 'Dashboard.dart';
 
 void main() => runApp(const WasteApp());
 
@@ -11,7 +11,7 @@ class WasteApp extends StatelessWidget {
     return MaterialApp(
       title: "Tas Waste App",
       themeMode: ThemeMode.system,
-      home: Home(),
+      home: MyHome(),
     );
   }
 }
