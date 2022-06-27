@@ -1,16 +1,6 @@
 import 'package:flutter/material.dart';
 
-class _MyStatefulWidgetState extends State<MyStatefulWidget> {
-  int _selectedIndex = 0;
-  static const TextStyle optionStyle =
-      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
-
+class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -120,17 +110,8 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
             label: 'Settings',
           ),
         ],
-        currentIndex: _selectedIndex,
         selectedItemColor: Colors.green,
-        onTap: _onItemTapped,
       ),
     );
   }
-}
-
-class MyStatefulWidget extends StatefulWidget {
-  const MyStatefulWidget({Key? key}) : super(key: key);
-
-  @override
-  State<MyStatefulWidget> createState() => _MyStatefulWidgetState();
 }

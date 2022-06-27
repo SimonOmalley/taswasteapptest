@@ -8,10 +8,10 @@ class WasteApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: "Tas Waste App",
       themeMode: ThemeMode.system,
-      home: MyStatefulWidget(),
+      home: Home(),
     );
   }
 }
