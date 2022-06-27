@@ -21,8 +21,33 @@ class Home extends State<MyHome> {
                 Container(
                   height: MediaQuery.of(context).size.height * 0.25,
                   width: MediaQuery.of(context).size.width,
-                  padding: EdgeInsets.all(20.0),
+                  padding: EdgeInsets.all(10.0),
                   color: Colors.lightGreen,
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Expanded(
+                        child: Container(
+                          margin: new EdgeInsets.symmetric(horizontal: 10.0),
+                          decoration: BoxDecoration(
+                              color: Colors.red,
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(20))),
+                        ),
+                      ),
+                      Expanded(
+                        child: Container(
+                          margin: new EdgeInsets.symmetric(horizontal: 10.0),
+                          decoration: BoxDecoration(
+                              color: Colors.red,
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(20))),
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ],
             ),
@@ -31,10 +56,16 @@ class Home extends State<MyHome> {
                 Container(
                   height: MediaQuery.of(context).size.height * 0.295,
                   width: MediaQuery.of(context).size.width,
-                  padding: EdgeInsets.all(20.0),
+                  padding: EdgeInsets.all(10.0),
                   alignment: Alignment.centerRight,
                   decoration: BoxDecoration(
                     color: Colors.yellow,
+                  ),
+                  child: Container(
+                    margin: new EdgeInsets.symmetric(horizontal: 10.0),
+                    decoration: BoxDecoration(
+                        color: Colors.orange,
+                        borderRadius: BorderRadius.all(Radius.circular(20))),
                   ),
                 )
               ],
@@ -44,9 +75,15 @@ class Home extends State<MyHome> {
                 Container(
                   height: MediaQuery.of(context).size.height * 0.25,
                   width: MediaQuery.of(context).size.width,
-                  padding: EdgeInsets.all(20.0),
+                  padding: EdgeInsets.all(10.0),
                   decoration: BoxDecoration(
                     color: Colors.blue,
+                  ),
+                  child: Container(
+                    margin: new EdgeInsets.symmetric(horizontal: 10.0),
+                    decoration: BoxDecoration(
+                        color: Colors.black,
+                        borderRadius: BorderRadius.all(Radius.circular(20))),
                   ),
                 ),
               ],
@@ -104,7 +141,7 @@ class Home extends State<MyHome> {
         ],
       ),
       body: Center(
-        child: _pages.elementAt(_selectedIndex), //New
+        child: _pages.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.green,
