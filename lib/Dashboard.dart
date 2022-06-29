@@ -22,7 +22,7 @@ class Home extends State<MyHome> {
                   height: MediaQuery.of(context).size.height * 0.25,
                   width: MediaQuery.of(context).size.width,
                   padding: EdgeInsets.all(10.0),
-                  color: Colors.lightGreen,
+                  color: Colors.white,
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -32,7 +32,7 @@ class Home extends State<MyHome> {
                         child: Container(
                           margin: new EdgeInsets.symmetric(horizontal: 10.0),
                           decoration: BoxDecoration(
-                              color: Colors.red,
+                              border: Border.all(width: 5, color: Colors.black),
                               borderRadius:
                                   BorderRadius.all(Radius.circular(20))),
                         ),
@@ -41,7 +41,7 @@ class Home extends State<MyHome> {
                         child: Container(
                           margin: new EdgeInsets.symmetric(horizontal: 10.0),
                           decoration: BoxDecoration(
-                              color: Colors.red,
+                              border: Border.all(width: 5, color: Colors.black),
                               borderRadius:
                                   BorderRadius.all(Radius.circular(20))),
                         ),
@@ -59,12 +59,12 @@ class Home extends State<MyHome> {
                   padding: EdgeInsets.all(10.0),
                   alignment: Alignment.centerRight,
                   decoration: BoxDecoration(
-                    color: Colors.yellow,
+                    color: Colors.white,
                   ),
                   child: Container(
                     margin: new EdgeInsets.symmetric(horizontal: 10.0),
                     decoration: BoxDecoration(
-                        color: Colors.orange,
+                        color: Colors.yellow,
                         borderRadius: BorderRadius.all(Radius.circular(20))),
                   ),
                 )
@@ -77,12 +77,12 @@ class Home extends State<MyHome> {
                   width: MediaQuery.of(context).size.width,
                   padding: EdgeInsets.all(10.0),
                   decoration: BoxDecoration(
-                    color: Colors.blue,
+                    color: Colors.white,
                   ),
                   child: Container(
                     margin: new EdgeInsets.symmetric(horizontal: 10.0),
                     decoration: BoxDecoration(
-                        color: Colors.black,
+                        border: Border.all(width: 5, color: Colors.black),
                         borderRadius: BorderRadius.all(Radius.circular(20))),
                   ),
                 ),
