@@ -46,7 +46,7 @@ class Home extends State<MyHome> {
                       Expanded(
                         child: Container(
                           child: Container(
-                              alignment: Alignment.center, child: Text("Hi")),
+                              alignment: Alignment.center, child: Text("Maps")),
                           margin: new EdgeInsets.symmetric(horizontal: 10.0),
                           decoration: BoxDecoration(
                               border: Border.all(width: 5, color: Colors.black),
