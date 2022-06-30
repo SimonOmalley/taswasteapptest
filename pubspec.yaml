@@ -36,9 +36,10 @@ dependencies:
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
-  google_maps_flutter:
   flutter_plugin_android_lifecycle:
-
+  http:
+  webfeed:
+  url_launcher:
   flutter_test:
     sdk: flutter
 

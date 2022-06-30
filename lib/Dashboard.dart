@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
+import 'RSS Feed.dart';
 
 int _selectedIndex = 0;
 
@@ -93,9 +94,7 @@ class Home extends State<MyHome> {
                   ),
                   child: Container(
                     child: Container(
-                      alignment: Alignment.center,
-                      child: Text("RSS Feed"),
-                    ),
+                        alignment: Alignment.center, child: Text("RSS Feed")),
                     margin: new EdgeInsets.symmetric(horizontal: 10.0),
                     decoration: BoxDecoration(
                         border: Border.all(width: 5, color: Colors.black),
