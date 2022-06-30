@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 
 int _selectedIndex = 0;
 
@@ -31,6 +32,11 @@ class Home extends State<MyHome> {
                       Expanded(
                         child: Container(
                           margin: new EdgeInsets.symmetric(horizontal: 10.0),
+                          height: MediaQuery.of(context).size.height * 0.25,
+                          child: Container(
+                            alignment: Alignment.center,
+                            child: Text("Recycling Goals"),
+                          ),
                           decoration: BoxDecoration(
                               border: Border.all(width: 5, color: Colors.black),
                               borderRadius:
@@ -39,6 +45,8 @@ class Home extends State<MyHome> {
                       ),
                       Expanded(
                         child: Container(
+                          child: Container(
+                              alignment: Alignment.center, child: Text("Hi")),
                           margin: new EdgeInsets.symmetric(horizontal: 10.0),
                           decoration: BoxDecoration(
                               border: Border.all(width: 5, color: Colors.black),
@@ -62,6 +70,10 @@ class Home extends State<MyHome> {
                     color: Colors.white,
                   ),
                   child: Container(
+                    child: Container(
+                      alignment: Alignment.center,
+                      child: Text("Recycling Tips"),
+                    ),
                     margin: new EdgeInsets.symmetric(horizontal: 10.0),
                     decoration: BoxDecoration(
                         color: Colors.yellow,
@@ -80,6 +92,10 @@ class Home extends State<MyHome> {
                     color: Colors.white,
                   ),
                   child: Container(
+                    child: Container(
+                      alignment: Alignment.center,
+                      child: Text("RSS Feed"),
+                    ),
                     margin: new EdgeInsets.symmetric(horizontal: 10.0),
                     decoration: BoxDecoration(
                         border: Border.all(width: 5, color: Colors.black),
